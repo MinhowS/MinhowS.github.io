@@ -1,0 +1,1035 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="html," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="随着时代的发展,我们对网页的要求越来越高,这也造成了更多的人来学习网页方面的知识.作为一位前端工作人员,我将从头讲解下学习的流程,首先我们要知道什么是HTML.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础入门1">
+<meta property="og:url" content="http://yoursite.com/2016/03/11/html基础入门1/index.html">
+<meta property="og:site_name" content="MinhowStyle's">
+<meta property="og:description" content="随着时代的发展,我们对网页的要求越来越高,这也造成了更多的人来学习网页方面的知识.作为一位前端工作人员,我将从头讲解下学习的流程,首先我们要知道什么是HTML.">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A85.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A88.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A89.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A810.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A811.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A812.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A813.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A815.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A816.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A817.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A818.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A819.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A820.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A821.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A822.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A823.jpg">
+<meta property="og:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A824.jpg">
+<meta property="og:updated_time" content="2016-03-11T16:26:47.800Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML基础入门1">
+<meta name="twitter:description" content="随着时代的发展,我们对网页的要求越来越高,这也造成了更多的人来学习网页方面的知识.作为一位前端工作人员,我将从头讲解下学习的流程,首先我们要知道什么是HTML.">
+<meta name="twitter:image" content="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> HTML基础入门1 | MinhowStyle's </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2b3d816dcb2ab39dcf658e74d512741d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">MinhowStyle's</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Note</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-heart fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'RBGz_J292bsbZD6dLkLv','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HTML基础入门1
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-11T13:36:05+08:00" content="2016-03-11">
+              2016-03-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/11/html基础入门1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/11/html基础入门1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/11/html基础入门1/" class="leancloud_visitors" data-flag-title="HTML基础入门1">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>随着时代的发展,我们对网页的要求越来越高,这也造成了更多的人来学习网页方面的知识.作为一位前端工作人员,我将从头讲解下学习的流程,首先我们要知道什么是HTML.</p>
+<a id="more"></a>
+<p>在正式开始介绍HTML之前,让我们先来了解下浏览器与服务器.</p>
+<h1 id="一、认识浏览器和服务器"><a href="#一、认识浏览器和服务器" class="headerlink" title="一、认识浏览器和服务器"></a>一、认识浏览器和服务器</h1><h2 id="1-什么是浏览器-什么是服务器"><a href="#1-什么是浏览器-什么是服务器" class="headerlink" title="1 什么是浏览器,什么是服务器"></a>1 什么是浏览器,什么是服务器</h2><p>我们的一般的认知：就是一个图标，可以双击打开，在地址栏中输入完内容之后会显示对应的页面。<br>我们看不到的内容：<br>当我们在浏览器的地址栏上面输入地址之后，浏览器会发送请求，到服务器，服务器接收并处理以后，将讲求的页面读取出来返回到浏览器，浏览器接收到响应回来的内容以后，浏览器的<strong>内核</strong>将内容<strong>渲染</strong>成一个完整的页面，并且显示出来。</p>
+<h3 id="1-1-什么是浏览器"><a href="#1-1-什么是浏览器" class="headerlink" title="1.1 什么是浏览器"></a>1.1 什么是浏览器</h3><p>浏览器是指可以显示网页服务器或者文件系统的HTML文件（标准通用标记语言的一个应用）内容，并让用户与这些文件交互的一种软件。</p>
+<h3 id="1-2-什么是服务器"><a href="#1-2-什么是服务器" class="headerlink" title="1.2 什么是服务器"></a>1.2 什么是服务器</h3><p>服务器，也称伺服器，是提供计算服务的设备。由于服务器需要响应服务请求，并进行处理，因此一般来说服务器应具备承担服务并且保障服务的能力。</p>
+<h2 id="2-浏览器的分类"><a href="#2-浏览器的分类" class="headerlink" title="2 浏览器的分类"></a>2 浏览器的分类</h2><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81.jpg" alt=""><br>主流浏览器：chrome，firefox，Safari，ie，opera••••<br>注意：虽然市面上的浏览器有很多，但是我们在学习过程中主要使用到的浏览器是<strong>chrome、firefox</strong></p>
+<h2 id="3-使用开发人员工具来查看请求和响应"><a href="#3-使用开发人员工具来查看请求和响应" class="headerlink" title="3 使用开发人员工具来查看请求和响应"></a>3 使用开发人员工具来查看请求和响应</h2><h3 id="3-1-打开开发人员工具"><a href="#3-1-打开开发人员工具" class="headerlink" title="3.1 打开开发人员工具"></a>3.1 打开开发人员工具</h3><p>用谷歌浏览器打开一个html文件,在网页界面,右键选择检查          </p>
+<p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82.jpg" alt=""><br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83.jpg" alt=""></p>
+<h3 id="3-2-打开network"><a href="#3-2-打开network" class="headerlink" title="3.2 打开network"></a>3.2 打开network</h3><p>按”F5”刷新一下界面,会出现如下图所示界面<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84.jpg" alt=""></p>
+<h3 id="3-3-浏览器发出的请求"><a href="#3-3-浏览器发出的请求" class="headerlink" title="3.3 浏览器发出的请求"></a>3.3 浏览器发出的请求</h3><p> <img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A85.jpg" alt=""></p>
+<h3 id="3-4-浏览器请求的详细信息"><a href="#3-4-浏览器请求的详细信息" class="headerlink" title="3.4 浏览器请求的详细信息"></a>3.4 浏览器请求的详细信息</h3><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86.jpg" alt=""><br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87.jpg" alt=""></p>
+<h3 id="3-5-浏览器请求数据的原理"><a href="#3-5-浏览器请求数据的原理" class="headerlink" title="3.5 浏览器请求数据的原理"></a>3.5 浏览器请求数据的原理</h3><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A88.jpg" alt=""><br>就是浏览器让请求的页面直接去服务器上找，找到了以后将这个文件中的内容通过repsonse响应回浏览器。</p>
+<h2 id="4-请求协议：http协议"><a href="#4-请求协议：http协议" class="headerlink" title="4 请求协议：http协议"></a>4 请求协议：http协议</h2><h3 id="4-1-请求报文"><a href="#4-1-请求报文" class="headerlink" title="4.1 请求报文"></a>4.1 请求报文</h3><h3 id="4-2-响应报文"><a href="#4-2-响应报文" class="headerlink" title="4.2 响应报文"></a>4.2 响应报文</h3><h3 id="4-3-Url-地址"><a href="#4-3-Url-地址" class="headerlink" title="4.3 Url:(地址)"></a>4.3 Url:(地址)</h3><p>地址栏上我们输入的内容。<br>Url的组成：协议://服务器的ip地址:端口号/请求的页面<br>例如：<a href="http://192.168.12.113:8020/index.html" target="_blank" rel="external">http://192.168.12.113:8020/index.html</a><br>平时我们访问网页，看似没有精确到一个文件，但实际上是网址访问DNS域名系统，DNS反馈一个服务器的ip端口给我们，从而实现访问服务器，同时有一个规定，index.html是默认的首页文件.</p>
+<h2 id="5-页面的本质"><a href="#5-页面的本质" class="headerlink" title="5 页面的本质"></a>5 页面的本质</h2><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A89.jpg" alt=""><br>虽然页面上只有一句，但是在源代码中有很多的内容：        </p>
+<p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A810.jpg" alt=""><br>原来浏览器所做的事情是将服务器响应回来的response进行<strong>从上到下</strong>的解析（渲染），将最后的页面效果显示出来。</p>
+<h2 id="6-浏览器内核"><a href="#6-浏览器内核" class="headerlink" title="6 浏览器内核"></a>6 浏览器内核</h2><p>内核（Rendering Engine）：可大概译为“渲染引擎”，不过我们一般习惯将之称为“浏览器内核”。负责对网页语法的解释（如标准通用标记语言下的一个应用HTML、JavaScript）并渲染（显示）网页。<br>内核的分类：<br>Trident：ie , 猎豹安全浏览器,360极速浏览器,百度浏览器…<br>Gecko：Firefox<br>Webkit：Safari<br>Blink：Chrome，Opera<br>不同的内核在渲染同一内容的时候会有差别。</p>
+<p>问题：为什么浏览器上只显示了一行代码，但是源代码中有6行代码？这就要牵扯到Html了,下面就正式开始.</p>
+<h1 id="二、Html"><a href="#二、Html" class="headerlink" title="二、Html"></a>二、Html</h1><p>Html：超级文本标记语言（HyperText Markup Language），在浏览器上运行的一种<strong>标记</strong>语言。<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A811.jpg" alt=""><br>PS:txt是text的缩写，术语：“纯文本文件”。<br><strong>HTML只干了一件事，那就是通过标签给文本增加语义。</strong><br>下面先介绍下最基本的标签，接下来应该学习更多具体语义标签。</p>
+<h2 id="1-结构（固定的结构）"><a href="#1-结构（固定的结构）" class="headerlink" title="1 结构（固定的结构）"></a>1 结构（固定的结构）</h2><blockquote>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></blockquote>
+<p><strong>A.Html标签</strong><br>作用所有html中标签的一个根节点。<br><strong>B.Head标签</strong><br>作用：用于存放：title,meta,base,style,script,link<br>注意：每个head标签中都必须有一个有title标签，其它的可选。<br><strong>C.Title标签</strong><br>作用：让页面拥有一个属于自己的标题。<br><strong>D.Body标签</strong><br>作用：用于存放所有的html的结构标签。<br>p,h,a,b,u,i,s,em,del,ins,strong,ul,li,ol…       </p>
+<p>结构记忆法：二师兄<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A812.jpg" alt="">    </p>
+<h3 id="1-1-开始人生中的第一个html页面"><a href="#1-1-开始人生中的第一个html页面" class="headerlink" title="1.1 开始人生中的第一个html页面"></a>1.1 开始人生中的第一个html页面</h3><h3 id="1-2-新建一个记事本，修改后缀为-html"><a href="#1-2-新建一个记事本，修改后缀为-html" class="headerlink" title="1.2 新建一个记事本，修改后缀为.html"></a>1.2 新建一个记事本，修改后缀为.html</h3><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A813.jpg" alt=""></p>
+<h3 id="1-3-以记事本打开：（编写html代码）"><a href="#1-3-以记事本打开：（编写html代码）" class="headerlink" title="1.3 以记事本打开：（编写html代码）"></a>1.3 以记事本打开：（编写html代码）</h3><h3 id="1-4-输入html的结构以及内容"><a href="#1-4-输入html的结构以及内容" class="headerlink" title="1.4 输入html的结构以及内容"></a>1.4 输入html的结构以及内容</h3><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A815.jpg" alt=""></p>
+<h3 id="1-5-查看页面效果"><a href="#1-5-查看页面效果" class="headerlink" title="1.5 查看页面效果"></a>1.5 查看页面效果</h3><p>保存，找到原始文件，找开方式—谷歌浏览器<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A816.jpg" alt=""></p>
+<h2 id="2-文件的后缀名和打开方式"><a href="#2-文件的后缀名和打开方式" class="headerlink" title="2 文件的后缀名和打开方式"></a>2 文件的后缀名和打开方式</h2><h3 id="2-1-文件的后缀名"><a href="#2-1-文件的后缀名" class="headerlink" title="2.1 文件的后缀名"></a>2.1 文件的后缀名</h3><p> a.修改文件的后缀名是不会改变内容的。<br> b.后缀名是用来决定这个文件的打开方式的和类型的.<br> c.（针对我们编写的html页面）如果我们要查看这个文件的内容，直接以浏览器方式打开。但是如果我们要修改这个文件中的内容，应该以记事本的方式打开。    </p>
+<h3 id="2-2-打开方式"><a href="#2-2-打开方式" class="headerlink" title="2.2 打开方式"></a>2.2 打开方式</h3><p>电脑中安装了很多的应用程序，可以为某一些的文件选择一种默认的打开方式，如果要修改，可以选中其中一个文件，右键，打开方式（所有的该类程序都以这种方式打开。）</p>
+<h2 id="3-Html中的标签"><a href="#3-Html中的标签" class="headerlink" title="3 Html中的标签"></a>3 Html中的标签</h2><p>标签：用“&lt;&gt;”包起来的内容。<br>Html标签：<code>&lt;html&gt;&lt;/html&gt;</code><br>由于刚开始的html页面还是很简单的，为了能够让页面更加的“充实”我们要学习更多的标签。</p>
+<h3 id="3-1-h系列的标签-Header-：h1-h2-h3-h4-h5-h6"><a href="#3-1-h系列的标签-Header-：h1-h2-h3-h4-h5-h6" class="headerlink" title="3.1 h系列的标签(Header)：h1,h2,h3,h4,h5,h6"></a>3.1 h系列的标签(Header)：h1,h2,h3,h4,h5,h6</h3><p>作用：把页面上的文字加上标题的语义。<br>代码：<br>h1,h2,h3,h4,h5,h6:将文字放大，加粗.h1→h6逐渐变小。（h1标签是最大的。）<br>注意：一个页面只能有一个h1标签。</p>
+<h3 id="3-2-p标签-Paragraph-：段落标签"><a href="#3-2-p标签-Paragraph-：段落标签" class="headerlink" title="3.2 p标签(Paragraph)：段落标签"></a>3.2 p标签(Paragraph)：段落标签</h3><p>作用：给页面上的一段文字加上段落的语义.<br>代码：</p>
+<blockquote>
+<pre><code>&lt;p&gt;这是段落&lt;/p&gt;        
+</code></pre></blockquote>
+<p>特点：页面上的一个段落，单独占一行，并且与上下内容之间存在距离。</p>
+<h3 id="3-3-hr标签-Horizontal-Rule"><a href="#3-3-hr标签-Horizontal-Rule" class="headerlink" title="3.3 hr标签(Horizontal Rule)"></a>3.3 hr标签(Horizontal Rule)</h3><p>作用：在页面显示一条横线。<br>代码：</p>
+<blockquote>
+<pre><code>&lt;hr /&gt;     
+</code></pre></blockquote>
+<p>特点：在页面显示一条横线，默认占整行。</p>
+<h3 id="3-4-br标签-break"><a href="#3-4-br标签-break" class="headerlink" title="3.4 br标签(break)"></a>3.4 br标签(break)</h3><p>作用：换行。<br>代码：</p>
+<blockquote>
+<pre><code>&lt;br /&gt;
+</code></pre><p>特点：换行。</p>
+<h3 id="3-5-b-Bold-u-Underlined-i-Italic-s-Strikethrough-strong-em-del-ins"><a href="#3-5-b-Bold-u-Underlined-i-Italic-s-Strikethrough-strong-em-del-ins" class="headerlink" title="3.5     b(Bold),u(Underlined),i(Italic),s(Strikethrough),strong,em,del,ins"></a>3.5     b(Bold),u(Underlined),i(Italic),s(Strikethrough),strong,em,del,ins</h3><p>作用：    </p>
+</blockquote>
+<pre><code>b:加粗   
+u:下划线   
+i:倾斜  
+s:删除线  
+</code></pre><p>建议不要使用<br>作用：<br>`</p>
+<blockquote>
+<p>strong:加粗<br>ins:下划线<br>em:倾斜<br>del:删除线  `     </p>
+</blockquote>
+<p>可以使用       </p>
+<h3 id="3-6-Img标签-image"><a href="#3-6-Img标签-image" class="headerlink" title="3.6 Img标签(image)"></a>3.6 Img标签(image)</h3><p>作用：在页面显示一张图片。<br>代码：</p>
+<blockquote>
+<pre><code>&lt;img src=”图片的路径” /&gt;
+</code></pre></blockquote>
+<p>特点：就是显示图片.<br>属性：<br>src：图片显示的路径<br>alt：如果图片加载不出来会显示这个属性中的文字<br>title：悬停文本，介绍这张图片   </p>
+<h3 id="3-7-a标签-Anchor"><a href="#3-7-a标签-Anchor" class="headerlink" title="3.7    a标签(Anchor)"></a>3.7    a标签(Anchor)</h3><p>a称为”锚”。</p>
+<h4 id="a标签的其它名称"><a href="#a标签的其它名称" class="headerlink" title="a标签的其它名称"></a>a标签的其它名称</h4><p>超级链接，超链接。<br>作用：可以在一个页面跳转到另一个页面。<br>代码：<code>&lt;a href=”页面的路径”&gt;&lt;/a&gt;</code><br>注意：<strong>在a标签之内必须要写上文字（空格也可以）</strong>，如果没有，那么这个标签在页面上找不到。</p>
+<h4 id="a标签的其它用法"><a href="#a标签的其它用法" class="headerlink" title="a标签的其它用法"></a>a标签的其它用法</h4><ol>
+<li>可以不跳转（跳转到当前页面）href=”#”    </li>
+<li>可以跳转到另外的页面。    </li>
+<li>可以在自己的页面进行定位。<br>A.设置a标签的href属性为“#id名”，<br>B.在页面的指定位置加入一个目标标签（可以是任意标签）<br>C.必须给这个标签设置一个id名：<code>&lt;p id=”mubiao”&gt;这是目标&lt;/p&gt;</code>   </li>
+<li>在跳转的页面进行定位。    </li>
+<li>可以进行下载。（强烈不推荐使用）</li>
+</ol>
+<h4 id="a标签的属性"><a href="#a标签的属性" class="headerlink" title="a标签的属性"></a>a标签的属性</h4><p>href:A标签跳转的目标地址<br>target: <code>_blank</code>:保留原始页面，重新打开一个页面；<code>_self</code>:在当前页面进行跳转<br>补充：base标签可以为页面上所有的a标签设置跳转的方式（base标签一般放在title标签下面）</p>
+<h3 id="3-8-标签与标签之间的关系"><a href="#3-8-标签与标签之间的关系" class="headerlink" title="3.8 标签与标签之间的关系"></a>3.8 标签与标签之间的关系</h3><p> 嵌套关系：一个标签包含另外一个标签，他们之间构造父子关系。<br> 并列关系：两个标签并列，他们构造兄弟关系。<br> 注意：将来在书写代码的时候如果两个标签之间的关系是嵌套关系，最好通过代码直接反映出来（子元素相对于父元素有一个缩进）。如果是并列关系，最好要有对齐。      </p>
+<h2 id="4-当前的主流文档类型"><a href="#4-当前的主流文档类型" class="headerlink" title="4 当前的主流文档类型"></a>4 当前的主流文档类型</h2><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A817.jpg" alt=""></p>
+<p>当我们打开网页时，出现在最顶端的一般是文档声明头。</p>
+<pre><code>1. &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+2. &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4. &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt;
+5. &lt;title&gt;Document&lt;/title&gt;
+6. &lt;/head&gt;
+7. &lt;body&gt;
+8. 
+9. &lt;/body&gt;
+10. &lt;/html&gt;
+</code></pre><p>strict表示“严格的”，这种模式里面的要求更为严格。这种严格体现在哪里？有一些标签不能使用。<br>比如，u标签，就是可以让一个本文加上下划线，但是这和HTML的本质有冲突，因为HTML只能负责语义，不能负责样式，而u这个下划线是样式。所以，在strict中是不能使用u标签的。<br>Transitional表示“普通的”，这种模式就是没有一些别的规范。<br>Frameset表示“框架”，在框架的页面使用。     </p>
+<h3 id="4-1-meta标签"><a href="#4-1-meta标签" class="headerlink" title="4.1 meta标签"></a>4.1 meta标签</h3><pre><code>&lt;meta http-equiv=&quot;Content-Type&quot;content=&quot;text/html;charset=UTF-8&quot;&gt;
+</code></pre><p>字符集用meta标签定义，meta表示“元”。“元”配置，就是表示基本的配置项目。不用背,以后用软件自动生成.<br>常用用法：    </p>
+<ol>
+<li>Description：可以描述页面，可以用来使用百度程序（网络爬虫）来收录关键信息，以此提高页面的排名。    </li>
+<li>Keywords：关键词，可以用来提高页。面的关健词的比重（前升排名的一种方式。）    </li>
+<li><p>字符集（编码格式）：</p>
+<p> <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><br>其中：Charset表示字符集的格式为UTF-8.<br>注意：字符集（文字在电脑是存储的字典）：<br>电脑是不能直接存储文字的，一般情况下电脑存储的是这个文字在“字典”里对应的位置。<br>gb2313—-&gt;gbk;<br>国标2313—-&gt;国标扩</p>
+</li>
+</ol>
+<p>所有一般看到乱码的原因是因为查找的字典不对：<br>我们做了一个小的例子：文档的内容用的是utf-8格式，而我们的存放文档的这个文件的格式是gbk,如下图:           </p>
+<p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A818.jpg" alt=""></p>
+<h3 id="4-2-gbk-utf-8之间的区别"><a href="#4-2-gbk-utf-8之间的区别" class="headerlink" title="4.2 gbk,utf-8之间的区别"></a>4.2 gbk,utf-8之间的区别</h3><p>相同点：都是字符的编码格式。<br>区别：<br>utf-8:收录是全世界所有的语言中的文字。<br>gbk:收录了汉字，片假名。<br>大小：<br>utf-8&gt;gbk<br>性能：<br>uft-8&lt;gbk<br>PS:将来我们在整个学习过程中都用utf-8;<br>utf-8存储一个汉字占3个字节，<br>gbk存储一个汉字上2个字节     </p>
+<h1 id="三、通过浏览器查看页面上的元素具体的标签"><a href="#三、通过浏览器查看页面上的元素具体的标签" class="headerlink" title="三、通过浏览器查看页面上的元素具体的标签"></a>三、通过浏览器查看页面上的元素具体的标签</h1><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A819.jpg" alt=""><br>查看页面元素组成.</p>
+<h1 id="四、开发工具的选择sublime"><a href="#四、开发工具的选择sublime" class="headerlink" title="四、开发工具的选择sublime"></a>四、开发工具的选择sublime</h1><p>dreamwaver:偏向设计<br>sublime:(轻量级)自带功能不太全，但是插件十分丰富。<br>webstrom:（重量级）自带功能比较全面。    </p>
+<p>小功能：<br>a.在浏览器中查看<br>b.打开所在文件夹<br>c.复制文件路径      </p>
+<h2 id="1-使用sublime新建文本的过程："><a href="#1-使用sublime新建文本的过程：" class="headerlink" title="1 使用sublime新建文本的过程："></a>1 使用sublime新建文本的过程：</h2><p>a.打开sublime，ctrl+n新建一个文件<br>b.保存后缀为.html<br>c.生成结构代码：输入html:xt + (Ctrl+E)      </p>
+<h2 id="2-解决文件夹中文名为方块的问题"><a href="#2-解决文件夹中文名为方块的问题" class="headerlink" title="2 解决文件夹中文名为方块的问题"></a>2 解决文件夹中文名为方块的问题</h2><p><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A820.jpg" alt=""><br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A821.jpg" alt="">      </p>
+<h1 id="五、路径问题"><a href="#五、路径问题" class="headerlink" title="五、路径问题"></a>五、路径问题</h1><p>第一种：绝对路径<br>带有盘符的路径：D:\html\基础\image\1.jpg.<br>  第二种：相对路径<br>由页面是一个文件，图片也是一个文件，而现在需要在页面上输出图片，所以需要得到图片相对于文件的路径.<br> a.如果页面与图片在同一目录下面：<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A822.jpg" alt=""></p>
+<pre><code>&lt;img src=”2.jpg” /&gt;
+</code></pre><p> b.如果页面在图片一上级目录：<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A823.jpg" alt=""></p>
+<pre><code>&lt;img src=”image/1.jpg” /&gt;
+</code></pre><p> c.如果图片在页面的上一级目录：<br><img src="http://7xrnzb.com1.z0.glb.clouddn.com/htm%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A824.jpg" alt=""></p>
+<pre><code>&lt;img src=”../2.jpg” /&gt;
+</code></pre><p>问题：那么将来我们在实际开发中到底是用绝对路径，还是用相对路径？？<br>只要不出意外情况都是用相对路径：因为<strong>相对路径的可移植性要强</strong>。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag">#html</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/09/Hexo博客最经典主题NexT的配置/" rel="next" title="Hexo博客最经典主题NexT的配置">
+                <i class="fa fa-chevron-left"></i> Hexo博客最经典主题NexT的配置
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/11/html基础入门1/"
+           data-title="HTML基础入门1" data-url="http://yoursite.com/2016/03/11/html基础入门1/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="明浩君" />
+          <p class="site-author-name" itemprop="name">明浩君</p>
+          <p class="site-description motion-element" itemprop="description">智商不在线i</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+          
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、认识浏览器和服务器"><span class="nav-number">1.</span> <span class="nav-text">一、认识浏览器和服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是浏览器-什么是服务器"><span class="nav-number">1.1.</span> <span class="nav-text">1 什么是浏览器,什么是服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-什么是浏览器"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 什么是浏览器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-什么是服务器"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 什么是服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-浏览器的分类"><span class="nav-number">1.2.</span> <span class="nav-text">2 浏览器的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-使用开发人员工具来查看请求和响应"><span class="nav-number">1.3.</span> <span class="nav-text">3 使用开发人员工具来查看请求和响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-打开开发人员工具"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 打开开发人员工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-打开network"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 打开network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-浏览器发出的请求"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 浏览器发出的请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-浏览器请求的详细信息"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 浏览器请求的详细信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-浏览器请求数据的原理"><span class="nav-number">1.3.5.</span> <span class="nav-text">3.5 浏览器请求数据的原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-请求协议：http协议"><span class="nav-number">1.4.</span> <span class="nav-text">4 请求协议：http协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-请求报文"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 请求报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-响应报文"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2 响应报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Url-地址"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3 Url:(地址)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-页面的本质"><span class="nav-number">1.5.</span> <span class="nav-text">5 页面的本质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-浏览器内核"><span class="nav-number">1.6.</span> <span class="nav-text">6 浏览器内核</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Html"><span class="nav-number">2.</span> <span class="nav-text">二、Html</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-结构（固定的结构）"><span class="nav-number">2.1.</span> <span class="nav-text">1 结构（固定的结构）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-开始人生中的第一个html页面"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.1 开始人生中的第一个html页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-新建一个记事本，修改后缀为-html"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.2 新建一个记事本，修改后缀为.html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-以记事本打开：（编写html代码）"><span class="nav-number">2.1.3.</span> <span class="nav-text">1.3 以记事本打开：（编写html代码）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-输入html的结构以及内容"><span class="nav-number">2.1.4.</span> <span class="nav-text">1.4 输入html的结构以及内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-查看页面效果"><span class="nav-number">2.1.5.</span> <span class="nav-text">1.5 查看页面效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-文件的后缀名和打开方式"><span class="nav-number">2.2.</span> <span class="nav-text">2 文件的后缀名和打开方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-文件的后缀名"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.1 文件的后缀名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-打开方式"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2 打开方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Html中的标签"><span class="nav-number">2.3.</span> <span class="nav-text">3 Html中的标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-h系列的标签-Header-：h1-h2-h3-h4-h5-h6"><span class="nav-number">2.3.1.</span> <span class="nav-text">3.1 h系列的标签(Header)：h1,h2,h3,h4,h5,h6</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-p标签-Paragraph-：段落标签"><span class="nav-number">2.3.2.</span> <span class="nav-text">3.2 p标签(Paragraph)：段落标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-hr标签-Horizontal-Rule"><span class="nav-number">2.3.3.</span> <span class="nav-text">3.3 hr标签(Horizontal Rule)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-br标签-break"><span class="nav-number">2.3.4.</span> <span class="nav-text">3.4 br标签(break)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-b-Bold-u-Underlined-i-Italic-s-Strikethrough-strong-em-del-ins"><span class="nav-number">2.3.5.</span> <span class="nav-text">3.5     b(Bold),u(Underlined),i(Italic),s(Strikethrough),strong,em,del,ins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-Img标签-image"><span class="nav-number">2.3.6.</span> <span class="nav-text">3.6 Img标签(image)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-a标签-Anchor"><span class="nav-number">2.3.7.</span> <span class="nav-text">3.7    a标签(Anchor)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a标签的其它名称"><span class="nav-number">2.3.7.1.</span> <span class="nav-text">a标签的其它名称</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#a标签的其它用法"><span class="nav-number">2.3.7.2.</span> <span class="nav-text">a标签的其它用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#a标签的属性"><span class="nav-number">2.3.7.3.</span> <span class="nav-text">a标签的属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-标签与标签之间的关系"><span class="nav-number">2.3.8.</span> <span class="nav-text">3.8 标签与标签之间的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-当前的主流文档类型"><span class="nav-number">2.4.</span> <span class="nav-text">4 当前的主流文档类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-meta标签"><span class="nav-number">2.4.1.</span> <span class="nav-text">4.1 meta标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-gbk-utf-8之间的区别"><span class="nav-number">2.4.2.</span> <span class="nav-text">4.2 gbk,utf-8之间的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、通过浏览器查看页面上的元素具体的标签"><span class="nav-number">3.</span> <span class="nav-text">三、通过浏览器查看页面上的元素具体的标签</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、开发工具的选择sublime"><span class="nav-number">4.</span> <span class="nav-text">四、开发工具的选择sublime</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-使用sublime新建文本的过程："><span class="nav-number">4.1.</span> <span class="nav-text">1 使用sublime新建文本的过程：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-解决文件夹中文名为方块的问题"><span class="nav-number">4.2.</span> <span class="nav-text">2 解决文件夹中文名为方块的问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、路径问题"><span class="nav-number">5.</span> <span class="nav-text">五、路径问题</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">明浩君</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"minhow-notes"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("wVHxS2pN3D6ASokXMlB1oLug-gzGzoHsz", "xJIa7pLUuK0NluOkBPBTnW52");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+</body>
+</html>
