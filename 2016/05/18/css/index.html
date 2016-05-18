@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="心情," />
+  <meta name="keywords" content="css," />
 
 
 
@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="Welcome to my website.The web is bound for success.I will write my experiencces in here.Perhaps you will think it’s low,but it’s important for me,I hope you can look for what you need or learn some">
+<meta name="description" content="心好累啊,各种忙~更新不能及时跟上,慢慢补请见谅…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome To My Website">
-<meta property="og:url" content="http://yoursite.com/2016/03/08/website/index.html">
+<meta property="og:title" content="css基础1">
+<meta property="og:url" content="http://yoursite.com/2016/05/18/css/index.html">
 <meta property="og:site_name" content="MinhowStyle's">
-<meta property="og:description" content="Welcome to my website.The web is bound for success.I will write my experiencces in here.Perhaps you will think it’s low,but it’s important for me,I hope you can look for what you need or learn some">
-<meta property="og:updated_time" content="2016-03-08T15:28:49.003Z">
+<meta property="og:description" content="心好累啊,各种忙~更新不能及时跟上,慢慢补请见谅…">
+<meta property="og:updated_time" content="2016-05-18T14:37:52.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome To My Website">
-<meta name="twitter:description" content="Welcome to my website.The web is bound for success.I will write my experiencces in here.Perhaps you will think it’s low,but it’s important for me,I hope you can look for what you need or learn some">
+<meta name="twitter:title" content="css基础1">
+<meta name="twitter:description" content="心好累啊,各种忙~更新不能及时跟上,慢慢补请见谅…">
 
 
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title> Welcome To My Website | MinhowStyle's </title>
+  <title> css基础1 | MinhowStyle's </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +272,7 @@
             
             
               
-                Welcome To My Website
+                css基础1
               
             
           </h1>
@@ -284,8 +284,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-08T14:26:04+08:00" content="2016-03-08">
-              2016-03-08
+            <time itemprop="dateCreated" datetime="2016-05-18T21:35:06+08:00" content="2016-05-18">
+              2016-05-18
             </time>
           </span>
 
@@ -298,8 +298,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/杂谈/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -314,8 +314,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/08/website/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/08/website/" itemprop="commentsCount"></span>
+                <a href="/2016/05/18/css/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/css/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -325,7 +325,7 @@
 
           
           
-             <span id="/2016/03/08/website/" class="leancloud_visitors" data-flag-title="Welcome To My Website">
+             <span id="/2016/05/18/css/" class="leancloud_visitors" data-flag-title="css基础1">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -346,7 +346,122 @@
       
 
       
-        <p>   Welcome to my <a href="http://www.byebyebye.xyz" target="_blank" rel="external">website</a>.The web is bound for success.I will write my experiencces in here.Perhaps you will think it’s low,but it’s important for me,I hope you can look for what you need or learn something from here.<strong>Enjoy the time what you are doing.</strong></p>
+        <p>心好累啊,各种忙~更新不能及时跟上,慢慢补请见谅…</p>
+<a id="more"></a>
+<p>Css梗概<br>Css简称，全称：Cascading Style Sheets层叠样式表</p>
+<p>CSS从审美的角度负责页面样式。</p>
+<h1 id="一、CSS整体感知"><a href="#一、CSS整体感知" class="headerlink" title="一、CSS整体感知"></a>一、CSS整体感知</h1><p>css是cascading style sheet 层叠式样式表的简写。“层叠式”的意思，我们将慢慢的去理解。<br>css的最新版本是css3，我们学习的是css2.1。 因为css3和css2.1不矛盾，必须先学2.1然后学3。</p>
+<h2 id="1-css的初体验"><a href="#1-css的初体验" class="headerlink" title="1 css的初体验"></a>1 css的初体验</h2><p>所有与css相关的设置都放在style标签中，style标签是一个双标签，它放在head标签之中，在title标签下面。(后面将会介绍css的三种类型)<br>现在在这里先写在style标签里面，结构如下：</p>
+<pre><code>1        &lt;style type=&quot;text/css&quot;&gt;
+2            p{
+3                color:red;
+4                font-size: 30px;
+5                text-decoration: underline;
+6                font-weight: bold;
+7                text-align: center;
+8                font-style: italic;
+9            }
+10            h1{
+11                color:blue;
+12                font-size: 50px;
+13                font-weight: bold;
+14                background-color: pink;
+15            }
+16        &lt;/style&gt;
+</code></pre><p>type表示“类型” ， text就是“纯文本”。css也是纯文本的。<br>sublime这里如果想自动生成，那么要输入：</p>
+<p>&lt;st 然后按tab键。<br>语法：</p>
+<pre><code>1    选择器{
+2        k:v;
+3        k:v;
+4        k:v;
+5        k:v;
+6    }
+7    选择器{
+8        k:v;
+9        k:v;
+10        k:v;
+11        k:v;
+12    }
+</code></pre><p>css对换行不敏感，对空格也不敏感。但是一定要有标准的语法。冒号，分号都不能省略。</p>
+<p><strong>总结：css是用来给页面上的结构“穿上衣服”（设置样式）。</strong></p>
+<h2 id="2-css中一些常见的属性"><a href="#2-css中一些常见的属性" class="headerlink" title="2 css中一些常见的属性"></a>2 css中一些常见的属性</h2><h3 id="2-1字体颜色："><a href="#2-1字体颜色：" class="headerlink" title="2.1字体颜色："></a>2.1字体颜色：</h3><pre><code>color:red;   
+</code></pre><p>color属性的值在后面介绍。<br>sublime中的快捷键是c，然后tab，插件安装多了也许会冲突。</p>
+<h3 id="2-2-字号大小："><a href="#2-2-字号大小：" class="headerlink" title="2.2 字号大小："></a>2.2 字号大小：</h3><pre><code>font-size:20px;
+</code></pre><p>font就是“字体”，size就是“尺寸”。单位px是“像素”。<br>单位必须加，不加不行。其他与字体相关的属性后面介绍。<br>sublime中的快捷键是fos，然后tab</p>
+<h3 id="2-3-背景颜色："><a href="#2-3-背景颜色：" class="headerlink" title="2.3 背景颜色："></a>2.3 背景颜色：</h3><pre><code>background-color: blue;
+</code></pre><p>background就是“背景”。这里用的是color属性，其余的随后介绍。<br>sublime中的快捷键是bgc，然后tab</p>
+<h3 id="2-4-设置宽："><a href="#2-4-设置宽：" class="headerlink" title="2.4 设置宽："></a>2.4 设置宽：</h3><pre><code>width: 100px;
+</code></pre><p>width是“宽度”的意思。单位px是“像素”。<br>sublime中的快捷键是w100，然后tab  </p>
+<h3 id="2-5-设置高："><a href="#2-5-设置高：" class="headerlink" title="2.5 设置高："></a>2.5 设置高：</h3><pre><code>height: 200px;
+</code></pre><p>height是“高度”的意思。单位px是“像素”。<br>sublime中的快捷键是h200，然后tab   </p>
+<h2 id="3-与字体相关的属性"><a href="#3-与字体相关的属性" class="headerlink" title="3 与字体相关的属性"></a>3 与字体相关的属性</h2><p>字体除了上面介绍的字号大小外，还有其他的一些常用属性。</p>
+<h3 id="3-1-设置字体粗细：font-weight"><a href="#3-1-设置字体粗细：font-weight" class="headerlink" title="3.1 设置字体粗细：font-weight"></a>3.1 设置字体粗细：font-weight</h3><p>加粗：</p>
+<pre><code>font-weight: bold;
+</code></pre><p>font是“字体” weight是“重量”的意思，bold粗。<br>sublime中的快捷键是fwb，然后tab<br>不加粗：</p>
+<pre><code>font-weight: normal;
+</code></pre><p>normal就是正常的意思<br>sublime中的快捷键是fwn，然后tab。<br>此外，还可以设置bolder、lighter、100~900（100的整数倍）</p>
+<h3 id="3-2-设置字体样式：font-style"><a href="#3-2-设置字体样式：font-style" class="headerlink" title="3.2 设置字体样式：font-style"></a>3.2 设置字体样式：font-style</h3><p>斜体：</p>
+<pre><code>font-style: italic;
+</code></pre><p>italic就是“斜体”<br>sublime中的快捷键是fsi，然后tab<br>不斜体：</p>
+<pre><code>font-style: normal;
+</code></pre><p>sublime中的快捷键是fsn，然后tab    </p>
+<h3 id="3-3-设置字体的类型：font-family"><a href="#3-3-设置字体的类型：font-family" class="headerlink" title="3.3 设置字体的类型：font-family"></a>3.3 设置字体的类型：font-family</h3><pre><code>font-family: “微软雅黑”;
+</code></pre><p>family是“家庭”、“伐木累”的意思。<br>sublime中的快捷键是ff，然后tab<br>可以同时指定多个字体，中间以逗号隔开，表示如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体。<br>使用font-family设置字体时，需要注意以下几点：</p>
+<p>–    各种字体之间必须使用英文状态下的逗号隔开。</p>
+<p>–    中文字体需要加英文状态下的引号，英文字体一般不需要加引号。当需要设置英文字体时，英文字体名必须位于中文字体名之前。</p>
+<p>–    如果字体名中包含空格、#、$等符号，则该字体必须加英文状态下的单引号或双引号，例如<code>font-family: &quot;Times New Roman&quot;;</code>。</p>
+<p>–    尽量使用系统默认字体，保证在任何用户的浏览器中都能正确显示。</p>
+<h3 id="3-4-字体的连写形式"><a href="#3-4-字体的连写形式" class="headerlink" title="3.4 字体的连写形式"></a>3.4 字体的连写形式</h3><pre><code>font: font-style font-weight font-size/line-height font-family;
+</code></pre><p>例如：</p>
+<pre><code>div{
+font:italic bold 18px/20px “黑体”；
+}
+</code></pre><p>注意： font-style与font-weight:是可选属性，line-height（行高）后面介绍，这里也可以不设置。</p>
+<h2 id="4-颜色赋值"><a href="#4-颜色赋值" class="headerlink" title="4 颜色赋值"></a>4 颜色赋值</h2><p>颜色的取值可以是：<br>a．    具体颜色的英文单词，如yellow,pink,red等。<br>b．    使用十六进制颜色表示法    </p>
+<pre><code>#000000; =#000;
+#331100; =#310;
+</code></pre><p>c．rgb表示法   </p>
+<pre><code>rgb(255,255,255);…..
+</code></pre><p>d．rgba表示法    （H5，CSS3里面用）</p>
+<pre><code>rgba(12,32,12,0.4)
+</code></pre><h2 id="5-background相关属性"><a href="#5-background相关属性" class="headerlink" title="5 background相关属性"></a>5 background相关属性</h2><p>与背景相关的属性主要是：color，imge，repeat，position。   </p>
+<h3 id="5-1-设置背景颜色"><a href="#5-1-设置背景颜色" class="headerlink" title="5.1 设置背景颜色"></a>5.1 设置背景颜色</h3><pre><code>background-color:red;
+</code></pre><h3 id="5-2-设置背景图片"><a href="#5-2-设置背景图片" class="headerlink" title="5.2 设置背景图片"></a>5.2 设置背景图片</h3><pre><code>background-image:url(这里面是图片的路径);  
+</code></pre><p>ps:默认情况下图片如果比容器小，它会平铺。padding区域也会有背景图的（后面的盒模型介绍，padding就是内边距的意思。）</p>
+<h3 id="5-3-设置背景是否平铺"><a href="#5-3-设置背景是否平铺" class="headerlink" title="5.3 设置背景是否平铺"></a>5.3 设置背景是否平铺</h3><pre><code>background-repeat:属性;
+</code></pre><p>属性可以为：</p>
+<pre><code>no-repeat;  不平铺
+repeat-x;   在水平方向上平铺
+repeat-y;   在垂直方向上平铺
+</code></pre><h3 id="5-4-设置背景图片的位置"><a href="#5-4-设置背景图片的位置" class="headerlink" title="5.4 设置背景图片的位置"></a>5.4 设置背景图片的位置</h3><pre><code>background-positon:x y;
+</code></pre><p>x，y可以是具体数值（如：background-position:100px 50px;），也可以是英文单词，如下：</p>
+<p>x：left   center   right</p>
+<p>y：top   center   bottom</p>
+<p>ps：默认相对于左上角。</p>
+<h3 id="5-5-背景的连写格式"><a href="#5-5-背景的连写格式" class="headerlink" title="5.5 背景的连写格式"></a>5.5 背景的连写格式</h3><pre><code>background:background-color background-image background-repeat background-position;
+</code></pre><p>例如：</p>
+<pre><code>div{
+background:red url(背景图片的路径) no-repeat center center;
+}
+</code></pre><p>注：background:red url(img/1.jpg);此时，图片会把背景颜色覆盖掉。<br>    background-color和background-image可单写，background-repeat与background-position由于是和image有关的，所以不可单写。</p>
+<h2 id="6-text相关属性"><a href="#6-text相关属性" class="headerlink" title="6 text相关属性"></a>6 text相关属性</h2><p>常用的就是下划线，缩进，文本位置。</p>
+<h3 id="6-1-设置文本装饰"><a href="#6-1-设置文本装饰" class="headerlink" title="6.1 设置文本装饰"></a>6.1 设置文本装饰</h3><pre><code>text-decoration
+</code></pre><p>取消下划线：</p>
+<pre><code>text-decoration:none;
+</code></pre><p>sublime中的快捷键是tdn，然后tab<br>设置下划线：</p>
+<pre><code>text-decoration:underline;
+</code></pre><p>sublime中的快捷键是tdu，然后tab<br>text-decoration还有一些其他的属性如下：</p>
+<pre><code>overline：上划线。
+line-through：删除线。
+</code></pre><p>另外，text-decoration后可以赋多个值，用于给文本添加多种显示效果，例如希望文字同时有下划线和删除线效果，就可以将underline和line-through同时赋给text-decoration。</p>
+<h3 id="6-2-设置文本水平对齐方式"><a href="#6-2-设置文本水平对齐方式" class="headerlink" title="6.2 设置文本水平对齐方式"></a>6.2 设置文本水平对齐方式</h3><p>–    text-align:属性;属性取值如下：</p>
+<pre><code>left：左对齐（默认值）
+right：右对齐
+center：居中对齐
+</code></pre><h3 id="6-3-设置文本缩进"><a href="#6-3-设置文本缩进" class="headerlink" title="6.3 设置文本缩进"></a>6.3 设置文本缩进</h3><pre><code>text-indent:属性;
+</code></pre><p>其属性值可为不同单位的数值、em字符宽度的倍数、或相对于浏览器窗口宽度的百分比%，允许使用负值, 建议使用em作为设置单位。例如：<br>text-indent:2em;表示首行缩进2个文本的距离。</p>
+<p>css没啥难的，就是要把属性给记忆准确。</p>
+<p>下一次更新主要介绍css的三种选择器</p>
 
       
     </div>
@@ -361,7 +476,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/心情/" rel="tag">#心情</a>
+            <a href="/tags/css/" rel="tag">#css</a>
           
         </div>
       
@@ -370,17 +485,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/07/hello-github/" rel="next" title="Hello-Github">
-                <i class="fa fa-chevron-left"></i> Hello-Github
+              <a href="/2016/03/12/html基础入门2/" rel="next" title="HTML基础入门2">
+                <i class="fa fa-chevron-left"></i> HTML基础入门2
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/08/hexo-github/" rel="prev" title="如何利用hexo-github搭建个人博客">
-                如何利用hexo-github搭建个人博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -406,8 +517,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/08/website/"
-           data-title="Welcome To My Website" data-url="http://yoursite.com/2016/03/08/website/">
+      <div class="ds-thread" data-thread-key="2016/05/18/css/"
+           data-title="css基础1" data-url="http://yoursite.com/2016/05/18/css/">
       </div>
     
   </div>
@@ -502,7 +613,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、CSS整体感知"><span class="nav-number">1.</span> <span class="nav-text">一、CSS整体感知</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-css的初体验"><span class="nav-number">1.1.</span> <span class="nav-text">1 css的初体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-css中一些常见的属性"><span class="nav-number">1.2.</span> <span class="nav-text">2 css中一些常见的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1字体颜色："><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1字体颜色：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-字号大小："><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 字号大小：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-背景颜色："><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 背景颜色：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-设置宽："><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4 设置宽：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-设置高："><span class="nav-number">1.2.5.</span> <span class="nav-text">2.5 设置高：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-与字体相关的属性"><span class="nav-number">1.3.</span> <span class="nav-text">3 与字体相关的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-设置字体粗细：font-weight"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 设置字体粗细：font-weight</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-设置字体样式：font-style"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 设置字体样式：font-style</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-设置字体的类型：font-family"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 设置字体的类型：font-family</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-字体的连写形式"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 字体的连写形式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-颜色赋值"><span class="nav-number">1.4.</span> <span class="nav-text">4 颜色赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-background相关属性"><span class="nav-number">1.5.</span> <span class="nav-text">5 background相关属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-设置背景颜色"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1 设置背景颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-设置背景图片"><span class="nav-number">1.5.2.</span> <span class="nav-text">5.2 设置背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-设置背景是否平铺"><span class="nav-number">1.5.3.</span> <span class="nav-text">5.3 设置背景是否平铺</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-设置背景图片的位置"><span class="nav-number">1.5.4.</span> <span class="nav-text">5.4 设置背景图片的位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-背景的连写格式"><span class="nav-number">1.5.5.</span> <span class="nav-text">5.5 背景的连写格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-text相关属性"><span class="nav-number">1.6.</span> <span class="nav-text">6 text相关属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-设置文本装饰"><span class="nav-number">1.6.1.</span> <span class="nav-text">6.1 设置文本装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-设置文本水平对齐方式"><span class="nav-number">1.6.2.</span> <span class="nav-text">6.2 设置文本水平对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-设置文本缩进"><span class="nav-number">1.6.3.</span> <span class="nav-text">6.3 设置文本缩进</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
