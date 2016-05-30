@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/05/30/css1/index.html">
 <meta property="og:site_name" content="MinhowStyle's">
 <meta property="og:description" content="这里简单介绍下选择器,选择器也是重要的一部分了.先介绍下基础选择器.">
-<meta property="og:updated_time" content="2016-05-30T12:45:19.291Z">
+<meta property="og:updated_time" content="2016-05-30T13:01:11.712Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css基础2">
 <meta name="twitter:description" content="这里简单介绍下选择器,选择器也是重要的一部分了.先介绍下基础选择器.">
@@ -364,6 +364,35 @@
 }
 &lt;/style&gt;
 </code></pre><p>效果：会将所有拥有这个类名的那些标签都加上相同的属性。</p>
+<h2 id="3-id选择器"><a href="#3-id选择器" class="headerlink" title="3 id选择器"></a>3 id选择器</h2><p>与类选择基本上相同，id选择器的选择符是“#”。<br>任何的HTML标签都可以有id属性。表示这个标签的名字。<br>一个HTML页面，不能出现相同的id，哪怕他们不是一个类型。比如页面上有一个id为pp的p，一个id为pp的div，是非法的！</p>
+<h2 id="4-类选择器和id选择器的命名规则"><a href="#4-类选择器和id选择器的命名规则" class="headerlink" title="4 类选择器和id选择器的命名规则"></a>4 类选择器和id选择器的命名规则</h2><p><strong>1） 只能有字母、数字、下划线（0-9，a-z，A-Z，_,-）<br>2） 必须以字母开头<br>3） 不能和标签同名。比如id不能叫做body、img、a</strong></p>
+<h2 id="5-id选择器与类选择器之间区别"><a href="#5-id选择器与类选择器之间区别" class="headerlink" title="5 id选择器与类选择器之间区别"></a>5 id选择器与类选择器之间区别</h2><p>类名：相当于是人的姓名。（可以重复）<br>特点：<br>1.0一个类名可以设置给多个标签<br>2.0一个标签可以有多个类名<br>id名：相当于是身份证号码。（必须唯一）<br>特点：<br>1.0只能给一个标签设置这个id名<br>2.0一个标签只能有一个id名。<br>id不是给css使用的，而是javascript来使用的。</p>
+<h1 id="二、高级选择器"><a href="#二、高级选择器" class="headerlink" title="二、高级选择器"></a>二、高级选择器</h1><h2 id="1-通配符"><a href="#1-通配符" class="headerlink" title="1 通配符*"></a>1 通配符*</h2><p>*就表示所有元素。 </p>
+<pre><code>1    *{
+2        color:red;3    }
+</code></pre><p>会去页面上一个一个的遍历页面的标签，然后给他们进行设置。效率不高，如果页面上的标签越多，效率越低，所以页面上不能出现这个选择器。</p>
+<h2 id="2-并集选择器（分组选择器）"><a href="#2-并集选择器（分组选择器）" class="headerlink" title="2 并集选择器（分组选择器）"></a>2 并集选择器（分组选择器）</h2><pre><code>1    h3,li{
+2        color:red;3    }
+</code></pre><p>用逗号就表示并集。</p>
+<h2 id="3-交集选择器"><a href="#3-交集选择器" class="headerlink" title="3 交集选择器"></a>3 交集选择器</h2><pre><code>1    h3.special{
+2        color:red;3    }
+</code></pre><p>选择的元素是同时满足两个条件：必须是h3标签，然后必须是special标签。<br>交集选择器没有空格。<br>所以</p>
+<pre><code>1    div.red
+</code></pre><p>和</p>
+<pre><code>1    div .red
+</code></pre><p>不是一个意思。<br> 交集选择器可以连续交（一般不要这么写）</p>
+<pre><code>1    h3.special.zhongyao{
+2        color:red;
+3    }
+</code></pre><p>交集选择器，我们一般都是以标签名开头，比如div.haha  比如p.special。</p>
+<h2 id="4-后代选择器"><a href="#4-后代选择器" class="headerlink" title="4 后代选择器"></a>4 后代选择器</h2><pre><code>1        &lt;style type=&quot;text/css&quot;&gt;
+2            .div1 p{
+3                color:red;
+4            }
+5        &lt;/style&gt;
+</code></pre><p>空格就表示后代，.div1 p 就是.div1的后代所有的p。<br>后代选择器，描述的是祖先结构。    </p>
+<h2 id="5-子代选择器"><a href="#5-子代选择器" class="headerlink" title="5 子代选择器"></a>5 子代选择器</h2><p>作用：找到一个标签的直接子元素来设置样式。</p>
+<p>下一次主要介绍css的样式和特性。</p>
 
       
     </div>
@@ -394,6 +423,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/30/css2/" rel="prev" title="css基础3">
+                css基础3 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -465,7 +498,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -515,7 +548,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础选择器"><span class="nav-number">1.</span> <span class="nav-text">一、基础选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标签选择器"><span class="nav-number">1.1.</span> <span class="nav-text">1 标签选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-类选择器"><span class="nav-number">1.2.</span> <span class="nav-text">2 类选择器</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础选择器"><span class="nav-number">1.</span> <span class="nav-text">一、基础选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标签选择器"><span class="nav-number">1.1.</span> <span class="nav-text">1 标签选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-类选择器"><span class="nav-number">1.2.</span> <span class="nav-text">2 类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-id选择器"><span class="nav-number">1.3.</span> <span class="nav-text">3 id选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-类选择器和id选择器的命名规则"><span class="nav-number">1.4.</span> <span class="nav-text">4 类选择器和id选择器的命名规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-id选择器与类选择器之间区别"><span class="nav-number">1.5.</span> <span class="nav-text">5 id选择器与类选择器之间区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、高级选择器"><span class="nav-number">2.</span> <span class="nav-text">二、高级选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-通配符"><span class="nav-number">2.1.</span> <span class="nav-text">1 通配符*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-并集选择器（分组选择器）"><span class="nav-number">2.2.</span> <span class="nav-text">2 并集选择器（分组选择器）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-交集选择器"><span class="nav-number">2.3.</span> <span class="nav-text">3 交集选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-后代选择器"><span class="nav-number">2.4.</span> <span class="nav-text">4 后代选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-子代选择器"><span class="nav-number">2.5.</span> <span class="nav-text">5 子代选择器</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
