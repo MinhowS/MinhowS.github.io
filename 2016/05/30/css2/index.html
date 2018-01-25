@@ -85,7 +85,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/05/30/css2/index.html">
 <meta property="og:site_name" content="MinhowStyle's">
 <meta property="og:description" content="这里简单介绍下css样式和特性.">
-<meta property="og:updated_time" content="2016-05-30T13:32:01.521Z">
+<meta property="og:updated_time" content="2018-01-25T15:28:23.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css基础3">
 <meta name="twitter:description" content="这里简单介绍下css样式和特性.">
@@ -434,20 +434,8 @@
 <h2 id="3-行内块级元素"><a href="#3-行内块级元素" class="headerlink" title="3 行内块级元素"></a>3 行内块级元素</h2><h3 id="3-1-常见的行内块级元素"><a href="#3-1-常见的行内块级元素" class="headerlink" title="3.1 常见的行内块级元素"></a>3.1 常见的行内块级元素</h3><p>img，input</p>
 <h3 id="3-2-行内块级元素默认属性"><a href="#3-2-行内块级元素默认属性" class="headerlink" title="3.2 行内块级元素默认属性"></a>3.2 行内块级元素默认属性</h3><pre><code>display:inline-block;
 </code></pre><h3 id="3-3-行内块级元素特点"><a href="#3-3-行内块级元素特点" class="headerlink" title="3.3 行内块级元素特点"></a>3.3 行内块级元素特点</h3><p>a．可以设置宽高<br>b．一行内可显示多个</p>
-<h1 id="四、伪类"><a href="#四、伪类" class="headerlink" title="四、伪类"></a>四、伪类</h1><p>伪类选择器和类选择器的作用一样，也是给标签设置样式的。<br>伪类：同一个标签，根据用户的某种操作状态不同，有不同的样式。<br>a标签就属于伪类，称为锚伪类，因为要看用户有没有点击、有没有触碰。<br>a标签的4种伪类如下：     </p>
-<pre><code>6            a:link{
-7                color:red;
-8            }
-9            a:visited{
-10                color:orange;
-11            }
-12            a:hover{
-13                color:green;
-14            }
-15            a:active{
-16                color:black;
-17            }
-</code></pre><p>:link      设置用户没有点击过这个链接的样式。 是英语“链接”的意思。<br>:visited    设置用户访问过了这个链接的样式。 是英语“访问过的”的意思。<br>:hover    设置用户鼠标悬停的时候链接的样式。 是英语“悬停”的意思。<br>:active    设置用户用鼠标点击这个链接，但是不松手，此刻的样式。 是英语“激活”的意思。<br><strong>PS：link和visit只能用于a标签，hover和active其他的标签也可以使用。</strong><br>记住，这四种状态，在css中，必须按照固定的顺序写：<br>a:link 、a:visited 、a:hover 、a:active<br>如果不按照顺序，那么将失效。<br><strong>记忆小技巧</strong>：“爱恨准则”love hate。必须先爱，后恨。  </p>
+<h1 id="四、伪类"><a href="#四、伪类" class="headerlink" title="四、伪类"></a>四、伪类</h1><p>伪类选择器和类选择器的作用一样，也是给标签设置样式的。<br>伪类：同一个标签，根据用户的某种操作状态不同，有不同的样式。<br>a标签就属于伪类，称为锚伪类，因为要看用户有没有点击、有没有触碰。<br>a标签的4种伪类如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">6			a:link&#123;</span><br><span class="line">7				color:red;</span><br><span class="line">8			&#125;</span><br><span class="line">9			a:visited&#123;</span><br><span class="line">10				color:orange;</span><br><span class="line">11			&#125;</span><br><span class="line">12			a:hover&#123;</span><br><span class="line">13				color:green;</span><br><span class="line">14			&#125;</span><br><span class="line">15			a:active&#123;</span><br><span class="line">16				color:black;</span><br><span class="line">17			&#125;</span><br></pre></td></tr></table></figure></p>
+<p>:link      设置用户没有点击过这个链接的样式。 是英语“链接”的意思。<br>:visited    设置用户访问过了这个链接的样式。 是英语“访问过的”的意思。<br>:hover    设置用户鼠标悬停的时候链接的样式。 是英语“悬停”的意思。<br>:active    设置用户用鼠标点击这个链接，但是不松手，此刻的样式。 是英语“激活”的意思。<br><strong>PS：link和visit只能用于a标签，hover和active其他的标签也可以使用。</strong><br>记住，这四种状态，在css中，必须按照固定的顺序写：<br>a:link 、a:visited 、a:hover 、a:active<br>如果不按照顺序，那么将失效。<br><strong>记忆小技巧</strong>：“爱恨准则”love hate。必须先爱，后恨。  </p>
 <h1 id="五、行高"><a href="#五、行高" class="headerlink" title="五、行高"></a>五、行高</h1><h2 id="1-行高（line-height）的作用"><a href="#1-行高（line-height）的作用" class="headerlink" title="1 行高（line-height）的作用"></a>1 行高（line-height）的作用</h2><p>设置文本的行高。<br>文本默认是在自己的行里垂直居中的。     </p>
 <h2 id="2-行高的应用"><a href="#2-行高的应用" class="headerlink" title="2 行高的应用"></a>2 行高的应用</h2><p>将文本的高度设置为容器的高度可以将文本在容器中垂直居中（默认行是显示在容器的左上角的）。<br>文本的水平居中：<code>text-align:center;</code><br>文本的垂直居中：<code>line-height:容器的高度</code>。例如：<code>line-height:50px;</code></p>
 <h2 id="3-行高的单位及继承性"><a href="#3-行高的单位及继承性" class="headerlink" title="3 行高的单位及继承性"></a>3 行高的单位及继承性</h2><h3 id="3-1-行高的继承性"><a href="#3-1-行高的继承性" class="headerlink" title="3.1 行高的继承性"></a>3.1 行高的继承性</h3><p>行高是可以是继承的，但是继承的方式要视单位而定。</p>
